@@ -1,0 +1,47 @@
+<!DOCTYPE html> 
+
+<html> 
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body{
+margin:;
+padding:;
+}
+div{
+border:solid 5px black;
+height:70px;
+width:300px;
+position:absolute;
+display: flex;
+align-items: center;
+justify-content: center;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+background-color:green;
+}
+p{
+font-size:40px;
+text-shadow:0px 0px 10px red;
+color:red;
+}
+</style>
+</head> 
+<body>
+<div>
+<p id="box">
+</p>
+</div>
+<script type="text/javascript">
+
+var myvar=setInterval(time,1000);
+function time(){
+var date=new Date();
+document.getElementById("box").innerHTML=date.toLocaleTimeString();
+}
+</script>
+</body> 
+<script src="script.js"></script>
+</html>
